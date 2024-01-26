@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "biblioteca-api"
+version = "0.1.0"
+description = "Caso prático nº 7"
+authors = ["Hélio xavier <helio.xavierleal@gmail.com@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.105.0"
+asyncpg = "^0.29.0"
+tortoise-orm = {extras = ["asyncpg"], version = "^0.20.0"}
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+requests = "^2.31.0"
+pydantic-settings = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
